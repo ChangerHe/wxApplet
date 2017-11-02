@@ -1,0 +1,7 @@
+<view class="container">
+  <image src="/images/avatar/4.png" style="" class="user-avatar"></image>
+  <text class="user-name">Hello, ChangerHe!</text>
+  <view bindtap="gotoNews" class="motto-container">
+    <text class="motto">开启小程序之旅</text>
+  </view>
+</view>

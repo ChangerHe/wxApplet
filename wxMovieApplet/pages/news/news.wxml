@@ -1,0 +1,34 @@
+<import src="./news-item/news-item-template.wxml"/>
+<view>
+  <swiper class="banner" indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <swiper-item>
+        <image class="banner-imgs slide-image" src="/images/iqiyi.png"/>
+      </swiper-item>
+      <swiper-item>
+        <image class="banner-imgs slide-image" src="/images/vr.png"/>
+      </swiper-item>
+      <swiper-item>
+        <image class="banner-imgs slide-image" src="/images/wx.png"/>
+      </swiper-item>
+  </swiper>
+  <block wx:for="{{lists}}">
+    <template is="postItem" data="{{...item}}"></template>
+  </block>
+  <!-- <wxs src="./news.wxs" module="list" />
+  <view wx:for="{{list.postList}}" class='post-container'>
+    <view class='post-author-date'>
+      <image class='post-author' src='{{item.avatar}}'></image>
+      <text class='post-date'>{{item.date}}</text>
+    </view>
+    <text class='title-text'>{{item.title}}</text>
+    <image class='title-image' src='{{item.imgSrc}}'></image>
+    <text class='text-intro'>{{item.content}}</text>
+    <view class='post-rank-num'>
+      <image  class='icon' src='/images/icon/chat.png'></image>
+      <text class='rank-num'>{{item.collection}}</text>
+      <image class='icon' src='/images/icon/view.png'></image>
+      <text class='rank-num'>{{item.reading}}</text>
+    </view>
+  </view> -->
+</view>

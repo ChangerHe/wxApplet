@@ -10,8 +10,7 @@ Page({
 
   // 处理点击事件
   gotoNews () {
-    console.log(1)
-    wx.navigateTo({
+    wx.switchTab({
       url: "../news/news"
     })
     // wx.redirectTo({

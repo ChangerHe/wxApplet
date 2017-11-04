@@ -9,7 +9,7 @@
 	"compileType": "weapp",
 	"libVersion": "1.6.0",
 	"appid": "wx71ca0b0d2d6fdab6",
-	"projectname": "wxMovieApplet",
+	"projectname": "bookTest",
 	"condition": {
 		"weapp": {
 			"current": -1,

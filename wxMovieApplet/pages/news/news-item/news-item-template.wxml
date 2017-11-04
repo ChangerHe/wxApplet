@@ -1,5 +1,5 @@
-<template name="postItem">
-  <view class='post-container'>
+<template name="postItem" >
+  <view class='post-container' catchtap="onPostTap" data-postId='{{postId}}'>
     <view class='post-author-date'>
       <image class='post-author' src='{{avatar}}'></image>
       <text class='post-date'>{{date}}</text>

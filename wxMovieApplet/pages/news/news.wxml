@@ -3,16 +3,16 @@
   <swiper class="banner" indicator-dots="{{indicatorDots}}"
     autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
       <swiper-item>
-        <image class="banner-imgs slide-image" src="/images/iqiyi.png"/>
+        <image class="banner-imgs slide-image" src="/images/iqiyi.png"  catchtap="onPostTap" data-postId='5'/>
       </swiper-item>
       <swiper-item>
-        <image class="banner-imgs slide-image" src="/images/vr.png"/>
+        <image class="banner-imgs slide-image" src="/images/vr.png" catchtap="onPostTap" data-postId='4'/>
       </swiper-item>
       <swiper-item>
-        <image class="banner-imgs slide-image" src="/images/wx.png"/>
+        <image class="banner-imgs slide-image" src="/images/wx.png" catchtap="onPostTap" data-postId='3'/>
       </swiper-item>
   </swiper>
-  <block wx:for="{{lists}}">
+  <block wx:for="{{lists}}" wx:key="index">
     <template is="postItem" data="{{...item}}"></template>
   </block>
   <!-- <wxs src="./news.wxs" module="list" />

@@ -1,58 +1,47 @@
-const lists = require('../../posts-data.js')
-
-// pages/news/news.js
+// pages/demo1/demo1.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    indicatorDots: true, // 是否显示面板指示点
-    autoplay: true, // 是否自动切换
-    interval: 5000, // 自动切换时间间隔
-    duration: 1000// 滑动动画时长
-  },
-
-  onPostTap(event) {
-    console.log(event.currentTarget.dataset.postid)
-    var listNum = event.currentTarget.dataset.postid
-    wx.navigateTo({
-      url: '../news-detail/news-detail?id=' + listNum
-    })
+    iconSize: [20, 30, 40, 50, 60, 70],
+    iconType: ['success', 'info', 'warn', 'waiting', 'safe_success', 'safe_warn', 'success_circle', 'success_no_circle', 'wating_circle', 'circle', 'download', 'info_circle', 'cancel', 'search', 'clear']
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // 页面加载后, 将数据读取出来
-    this.setData({
-      lists: lists.postList
-    })
+  
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+  
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+  
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
+  
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
+  
   },
 
   /**

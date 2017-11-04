@@ -1,0 +1,21 @@
+<view class="group">
+  <block wx:for="{{iconType}}">
+    <icon type='{{item}}' size='50'></icon>
+  </block>
+</view>
+<view class='progress'>
+  <progress percent='30'></progress>
+  <progress percent='30' show-info='true'></progress>
+  <progress percent='40' color='red'></progress>
+  <progress percent='50' active></progress>
+  <progress percent='60' stroke-width="1"></progress>
+</view>
+<view class='button'>
+  <button type="primary">按钮</button>
+  <button type="default">按钮</button>
+  <button type='warn'>按钮</button>
+  <button type='default' size='{{defaultSize}}' loading="true" plain="{{plain}}" disabled='disables' bindtap="default" hover-class="other-botton-hover">default</button>
+  <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap='primary'>primary</button>
+  <input type='digit' placeholder='数字键盘'></input>
+  <input type='idcard' placeholder='身份证'></input>
+</view>

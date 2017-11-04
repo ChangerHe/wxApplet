@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.head-image {
+  width: 100%;
+  height: 460rpx;
+}
+
+.author-date {
+  margin: 24rpx 0 30rpx 30rpx;
+}
+
+.avatar {
+  width: 64rpx;
+  height: 64rpx;
+  vertical-align: middle;
+}
+
+.author-date text {
+  display: inline-block;
+  padding-left: 24rpx;
+  font-size: 24rpx;
+  vertical-align: middle;
+  color: #9b9b9b;
+}
+
+.author-date .author {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.title {
+  padding: 10rpx 40rpx;
+  font-size: 36rpx;
+  line-height: 56rpx;
+  font-weight: 700;
+}
+
+.circle-img image {
+  float: right;
+  width: 90rpx;
+  height: 90rpx;  
+  margin-right: 40rpx;
+  vertical-align: middle;
+}
+
+.simple-line {
+  height: 44rpx;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0 40rpx;
+}
+
+.content {
+  margin: 30rpx;
+  line-height: 40rpx;
+  color: #898989;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+.music {
+  width: 102rpx;
+  height: 110rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -51rpx;
+  top: 180rpx;
+  opacity: 0.6;
+}

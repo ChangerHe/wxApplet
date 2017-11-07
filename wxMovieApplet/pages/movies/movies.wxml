@@ -1,2 +1,12 @@
-<!--pages/movies/movies.wxml-->
-<text>pages/movies/movies.wxml</text>
+<view class='all-panel'>
+  <import src="./movie-list/movie-list.wxml"/>
+  <view class='search-banner'>
+    <image src='/images/icon/search.png'></image>
+    <input style='text' placeholder='釜山行/夏有乔木雅望天堂' />
+  </view>
+  <view class='movie-template'>
+    <template is="movieListTemplate" data="{{...inTheater}}"></template>
+    <template is="movieListTemplate" data="{{...Top250}}"></template>
+    <template is="movieListTemplate" data="{{...comingSoon}}"></template>
+  </view>
+</view>

@@ -1,1 +1,30 @@
-/* pages/movies/movies.wxss */
+@import './movie-list/movie-list.wxss';
+
+.all-panel {
+  overflow-x: hidden;
+}
+
+.movie-template {
+  background-color: rgb(242, 242, 242);
+}
+
+.search-banner {
+  width: 100%;
+  padding: 26rpx 0 26rpx 80rpx;
+  background-color: rgb(242, 242, 242);
+  position: relative;
+}
+
+.search-banner image {
+  position: absolute;
+  top: 39rpx;
+  left: 20rpx;
+}
+
+.search-banner image {
+  width: 26rpx;
+  height: 26rpx;
+}
+.search-banner input {
+  font-size: 26rpx;
+}

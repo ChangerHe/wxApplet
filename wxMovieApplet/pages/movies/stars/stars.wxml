@@ -1,0 +1,13 @@
+<template name="starsTemplate">
+<view class='stars-container'>
+  <view class='stars'>
+    <block wx:for='{{stars}}'>
+      <image wx:if="{{item == 1}}" src='/images/icon/star.png'></image>
+      <!--等于2表示半颗星  -->
+      <image wx:elif='{{item == 2}}' src='/images/icon/half-star.png'></image>
+      <image wx:else src='/images/icon/none-star.png'></image>
+    </block>
+  </view>
+  <text class='stars-score'>{{rank}}</text>
+</view>
+</template>

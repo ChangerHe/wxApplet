@@ -1,0 +1,38 @@
+@import '../movie/movie.wxss';
+
+.movies-template {
+  margin-bottom: 38rpx;
+  background-color: #fff;
+}
+
+.movie-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.movie-banner .image-wrapper {
+  /* margin-right: 54rpx; */
+  height: 400rpx;
+}
+
+.head-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 36rpx 0;
+  color: rgb(102, 102, 102);
+}
+
+.head-left-text {
+  margin-left: 30rpx;
+}
+
+.head-right-text {
+  display: flex;
+}
+
+.head-right-text image {
+  height: 16rpx;
+  width: 10rpx;
+  margin: 8rpx 30rpx 0 14rpx;
+}
